@@ -1,7 +1,7 @@
 var canva;
 var gameState="START";
 var passer_6;
-var mn=0,sc
+
 function preload(){
   c_door =loadImage("Images/closed_door.jpg");
   o_door = loadImage("Images/Opened_door.jpg");
@@ -37,18 +37,7 @@ function draw(){
   fill("red");
   text("--Grandpa's Treasure--",300,50);
   
-  sc = second();
-  text(mn,800,150);
-
- // textSize(40);
- 
-  text(sc,860,150);
-
   
-  if (sc===60){
-    mn+=1
-
-  } 
   if ( gameState==="START" ){
     if(keyDown("s")){
 
